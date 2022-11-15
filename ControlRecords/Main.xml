@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<controlrecord screen="Main">
+<control name="MenuButton">
+    <type>Button</type>
+    <searchtype>XPATH</searchtype>
+    <searchparameter>//button[contains(@class, 'MenuButton')]</searchparameter>
+  </control>
+</controlrecord>

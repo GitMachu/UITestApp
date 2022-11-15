@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<controlrecord screen="Payees">
+<control name="MainForm">
+    <type>Form</type>
+    <searchtype>XPATH</searchtype>
+    <searchparameter>//div[contains(@class, 'Payees')]</searchparameter>
+</control>
+<control name="AddButton">
+    <type>Button</type>
+    <searchtype>XPATH_DISPLAYED</searchtype>
+    <searchparameter>//div[contains(@class, 'Payees')]//button[@aria-label='Add payee']</searchparameter>
+</control>
+<control name="PayeesList">
+    <type>List</type>
+    <searchtype>XPATH</searchtype>
+    <searchparameter>//div[contains(@class, 'Payees')]//ul</searchparameter>
+</control>
+<control name="AddPayeeForm">
+    <type>Form</type>
+    <searchtype>XPATH</searchtype>
+    <searchparameter>//form[@id='apm-form']</searchparameter>
+</control>
+<control name="AddPayee_PayeeName">
+    <type>ComboBox</type>
+    <searchtype>ID</searchtype>
+    <searchparameter>ComboboxInput-apm-name</searchparameter>
+</control>
+<control name="AddPayee_AccountBankNumber">
+    <type>ComboBox</type>
+    <searchtype>XPATH</searchtype>
+    <searchparameter>//input[@id='apm-bank']</searchparameter>
+</control>
+<control name="AddPayee_AccountBranchNumber">
+    <type>ComboBox</type>
+    <searchtype>XPATH</searchtype>
+    <searchparameter>//input[@id='apm-branch']</searchparameter>
+</control>
+<control name="AddPayee_AccountAccountNumber">
+    <type>ComboBox</type>
+    <searchtype>XPATH</searchtype>
+    <searchparameter>//input[@id='apm-account']</searchparameter>
+</control>
+<control name="AddPayee_AccountSuffix">
+    <type>ComboBox</type>
+    <searchtype>XPATH</searchtype>
+    <searchparameter>//input[@id='apm-suffix']</searchparameter>
+</control>
+<control name="AddPayee_Add">
+    <type>Button</type>
+    <searchtype>XPATH</searchtype>
+    <searchparameter>//input[@id='ComboboxInput-apm-name']/ancestor::form[1]//button[text()='Add']</searchparameter>
+</control>
+<control name="ErrorHeader">
+    <type>ToolTip</type>
+    <searchtype>XPATH</searchtype>
+    <searchparameter>//div[@class='error-header']</searchparameter>
+</control>
+</controlrecord>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<controlrecord screen="Main">
+<control name="MenuButton">
+    <type>Button</type>
+    <searchtype>XPATH</searchtype>
+    <searchparameter>//button[contains(@class, 'MenuButton')]</searchparameter>
+</control>
+<control name="MainMenu">
+    <type>NavigationMenu</type>
+    <searchtype>XPATH</searchtype>
+    <searchparameter>//ul[contains(@class, 'MainMenu-navList')]</searchparameter>
+</control>
+<control name="EverydayAccountPanelItem">
+    <type>PanelItem</type>
+    <searchtype>XPATH</searchtype>
+    <searchparameter>//div[contains(@class, 'accounts-panel')]//h3[@title='Everyday']/ancestor::div[@role='button']</searchparameter>
+</control>
+<control name="BillsAccountPanelItem">
+    <type>PanelItem</type>
+    <searchtype>XPATH</searchtype>
+    <searchparameter>//div[contains(@class, 'accounts-panel')]//h3[@title='Bills ']/ancestor::div[@role='button']</searchparameter>
+</control>
+</controlrecord>

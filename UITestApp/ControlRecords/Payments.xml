@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<controlrecord screen="Payments">
+<control name="MainForm">
+    <type>Form</type>
+    <searchtype>XPATH</searchtype>
+    <searchparameter>//form[@id='paymentForm']</searchparameter>
+</control>
+<control name="From_ChooseAccount">
+    <type>Button</type>
+    <searchtype>XPATH</searchtype>
+    <searchparameter>//button[@data-monitoring-label='Transfer Form From Chooser']</searchparameter>
+</control>
+<control name="To_ChooseAccount">
+    <type>Button</type>
+    <searchtype>XPATH</searchtype>
+    <searchparameter>//button[@data-monitoring-label='Transfer Form To Chooser']</searchparameter>
+</control>
+<control name="From_ChooseAccountList">
+    <type>List</type>
+    <searchtype>XPATH</searchtype>
+    <searchparameter>//input[@data-monitoring-label='Transfer Form Search']/ancestor::div[contains(@class, 'searchContainer')]/following-sibling::ul</searchparameter>
+</control>
+<control name="To_Tab">
+    <type>Tab</type>
+    <searchtype>XPATH</searchtype>
+    <searchparameter>//ul[@role='tablist']</searchparameter>
+</control>
+<control name="To_AccountsList">
+    <type>List</type>
+    <searchtype>XPATH</searchtype>
+    <searchparameter>//ul[@role='tablist']/following-sibling::div[@data-testid='to-accounts-list-results']/ul</searchparameter>
+</control>
+<control name="Amount">
+    <type>ComboBox</type>
+    <searchtype>XPATH</searchtype>
+    <searchparameter>//input[@data-monitoring-label='Transfer Form Amount']</searchparameter>
+</control>
+<control name="Transfer">
+    <type>Button</type>
+    <searchtype>XPATH</searchtype>
+    <searchparameter>//button[@data-monitoring-label='Transfer Form Submit']</searchparameter>
+</control>
+</controlrecord>

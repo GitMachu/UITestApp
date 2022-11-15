@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<controlrecord screen="Common">
+<control name="ControlToolTip">
+    <type>ToolTip</type>
+    <searchtype>XPATH</searchtype>
+    <searchparameter>//div[contains(@class, 'tooltip-panel')]</searchparameter>
+</control>
+<control name="SuccessMessage">
+    <type>NotificationMessage</type>
+    <searchtype>XPATH</searchtype>
+    <searchparameter>//div[@id='notification']//div[contains(@class, 'js-notification')]</searchparameter>
+</control>
+</controlrecord>
