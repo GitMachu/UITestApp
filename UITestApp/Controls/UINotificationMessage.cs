@@ -71,7 +71,7 @@ namespace UITestApp.Controls
                 for (int count = 1; count <= NOTIFICATION_MESSAGE_WAIT_TIME; count++)
                 {
                     string notificationState = MainLibrary.TargetControl[threadIndex].GetAttribute("class") != null ? MainLibrary.TargetControl[threadIndex].GetAttribute("class") : "";
-                    switch(notificationState == null ? notificationState : "")
+                    switch(notificationState == null ? "" : notificationState)
                     {
                         case "inner js-notification":
                             logMessage = "Default notification status found. ";
