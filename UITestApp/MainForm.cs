@@ -454,7 +454,7 @@ namespace UITestApp
             delegate (object o, DoWorkEventArgs args)
             {
                 BackgroundWorker b = o as BackgroundWorker;
-                CommonFunctions.LogMessage(threadIndex, "Execution running on thread " + threadIndex+1);
+                CommonFunctions.LogMessage(threadIndex, "Execution running on thread " + (threadIndex+1));
                 InitializeEnvironment(threadIndex);
                 b.ReportProgress(0);
                 foreach (DataRow row in stepTables[threadIndex].Rows)
